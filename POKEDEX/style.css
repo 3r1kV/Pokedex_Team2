@@ -63,7 +63,7 @@ body{
     width: 25%;
 }
 #nombre{
-    margin-left: -43%;
+    margin-left: -40%;
     margin-top: -10%;
     font-family: "VT323", monospace;
     font-weight: 400;
@@ -72,7 +72,7 @@ body{
 }
 
 #hablilidades{
-    margin-left: -800px;
+    margin-left: -700px;
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
@@ -80,8 +80,8 @@ body{
 }
 
 #tipo{
-    margin-top: -120px;
-    margin-left: -300px;
+    margin-top: -125px;
+    margin-left: -150px;
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
@@ -90,7 +90,7 @@ body{
 
 #estadisticas{
     margin-top: 40px;
-    margin-left: -43%;
+    margin-left: -40%;
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
