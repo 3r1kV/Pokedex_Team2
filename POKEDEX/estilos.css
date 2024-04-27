@@ -1,0 +1,43 @@
+#nombre{
+    margin-left: -43%;
+    margin-top: -10%;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+#hablilidades{
+    margin-left: -800px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+#tipo{
+    margin-top: -120px;
+    margin-left: -300px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+#estadisticas{
+    margin-top: 40px;
+    margin-left: -43%;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}
+
+#fotos{
+    margin-left: 50%; 
+    margin-top: -300px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+}

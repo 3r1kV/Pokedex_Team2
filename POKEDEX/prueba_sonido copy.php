@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex 100% Real</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -136,28 +140,54 @@
             // Mostrar los datos del Pokemon en la tabla
             var tableContent = '';
 
-            tableContent += '<h2> NOMBRE</h2>'
+            tableContent += '<div id="nombre">';
+
+            tableContent += '<h2>NOMBRE</h2>'
             data.forms.forEach(function(name){
                 tableContent += name.name + '<br>';
             })
                 tableContent += data.id + '<br>';
 
+            tableContent += '</div>';
+
+            tableContent += '<div id="hablilidades">';
+
             tableContent += '<h2>HABILIDADES</h2>';
             data.abilities.forEach(function(ability) {
                 tableContent += ability.ability.name + '<br>';
             });
+
+            tableContent += '</div>';
+
+            tableContent += '<div id="tipo">';
+
             tableContent += '<h2>TIPO</h2>';
             data.types.forEach(function(type) {
                 tableContent += type.type.name + '<br>';
             });
+
+            tableContent += '</div>';
+
+            tableContent += '<div id="estadisticas">';
+
             tableContent += '<h2>ESTADISTICAS</h2>';
             data.stats.forEach(function(stat) {
                 tableContent += stat.stat.name + ' = ' + stat.base_stat + '<br>';
             });
+
+            tableContent += '</div>';
+
+            tableContent += '<div id="fotos">';
+            
             tableContent += '<h2>FOTOS</h2>';
             tableContent += '<img src="' + data.sprites.other.showdown.front_default + '" width="100">';
             tableContent += '<img src="' + data.sprites.other.showdown.back_default + '" width="130">';
+            
+            tableContent += '</div>';
+
             document.getElementById('pokeinfo').innerHTML = tableContent;
+
+            
         })
         .catch(error => console.error('Error:', error));
     });
