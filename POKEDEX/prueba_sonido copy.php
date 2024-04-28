@@ -33,7 +33,6 @@
         var tiempo = parseFloat(sessionStorage.getItem('musicaTiempo'));
         miMusica.currentTime = tiempo;
         miMusica.play();
-        musicButton.textContent = 'Pausar Música';
     }
 
     function toggleMusic() {
@@ -166,7 +165,9 @@
             
             tableContent += '<h2>FOTOS</h2>';
             tableContent += '<img src="' + data.sprites.other.showdown.front_default + '" width="100">';
-            tableContent += '<img src="' + data.sprites.other.showdown.back_default + '" width="130">';
+            tableContent += '<img src="' + data.sprites.other.showdown.back_default + '" width="130"> <br>';
+            tableContent += `<img src=${data.sprites.other["official-artwork"].front_default} width="190">`;
+            tableContent += `<img src=${data.sprites.other["official-artwork"].front_shiny} width="190">`;
             
             tableContent += '</div>';
 
