@@ -1,0 +1,52 @@
+/* Ancho, altura y estilo del contenedor de la tabla */
+.tabla-container{
+  width: 40%; /* Define el ancho del contenedor */
+  max-height: 70%; /* Define la altura máxima del contenedor */
+  overflow-y: auto; /* Permite que el contenido se desborde si es necesario, mostrando una barra de desplazamiento */
+  float: right; /* Hace que el contenedor flote a la derecha */
+}
+
+/* Estilo de la tabla */
+table{
+  
+  border-collapse: collapse; /* Fusiona los bordes de las celdas */
+  width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+}
+
+/* Estilo de las celdas de encabezado y cuerpo de la tabla */
+th, td {
+  padding: 8px; /* Añade espacio interior a las celdas */
+  text-align: center; /* Centra el texto dentro de las celdas */
+  border: 1px solid #ccc; /* Agrega un borde sólido de 1px con color gris claro */
+}
+
+/* Estilo de las celdas de datos */
+td {
+  padding: 1px; /* Añade espacio interior a las celdas */
+  text-align: center; /* Centra el texto dentro de las celdas */
+  width: auto; /* Establece el ancho de las celdas al 25% del ancho de la tabla */
+}
+
+/* Estilo de las imágenes dentro de las celdas */
+img {
+  max-width: 50%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
+  height: 50%; /* Ajusta automáticamente la altura para mantener la proporción */
+  display: block; /* Hace que la imagen sea un elemento de bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro de su contenedor */
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave a la transformación */
+}
+
+/* Efecto al pasar el ratón sobre las imágenes */
+img:hover {
+  transform: scale(1.1); /* Agrandar la imagen al 110% de su tamaño original al pasar el ratón sobre ella */
+  cursor: pointer;
+}
+
+.pokemon-name {
+  opacity: 0; /* Inicialmente, el nombre estará invisible */
+  transition: opacity 0.5s ease; /* Transición de 0.5 segundos */
+}
+
+.pokemon-container:hover .pokemon-name {
+  opacity: 1; /* Al pasar el ratón sobre el contenedor, el nombre se volverá visible */
+}
